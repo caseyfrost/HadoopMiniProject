@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 import sys
 
 for line in sys.stdin:
     data = line.strip().split(',')
-    print(f'{data[2]}\t("{data[1]}", "{data[3]}", "{data[5]}")')
+    print '{}\t("{}", "{}", "{}")'.format(data[2], data[1], data[3], data[5])
 
 
 # for testing

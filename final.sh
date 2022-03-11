@@ -7,4 +7,4 @@ hadoop jar  /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
 hadoop jar  /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
 -file mapper2.py -mapper mapper1.py \
 -file reducer2.py -reducer reducer1.py \
--input output1 -output output/final_output
+-input output/output1 -output output/final_output

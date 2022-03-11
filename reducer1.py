@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 
 vin_dict = {}
@@ -22,7 +23,8 @@ def flush():
 
     for vals in vin_list:
         if vals[0] == 'A':
-            print(f'{current_vin}\t("{vals[0]}", "{vin_dict[current_vin][1]}", "{vin_dict[current_vin][2]}")')
+            print '{}\t("{}", "{}", "{}")'.format(current_vin, vals[0], vin_dict[current_vin][1],
+                                                  vin_dict[current_vin][2])
         else:
             continue
 

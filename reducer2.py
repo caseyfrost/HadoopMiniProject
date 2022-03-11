@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 
 current_key = None
@@ -17,7 +18,7 @@ def flush():
     global value_list
 
     key_sum = sum(value_list)
-    print(f'{current_key}\t{key_sum}')
+    print '{}\t{}'.format(current_key, key_sum)
 
 
 for line in sys.stdin:
